@@ -122,7 +122,7 @@ void accept_request(void *arg)
             strcat(path, "/index.html");
         if ((st.st_mode & S_IXUSR) ||
                 (st.st_mode & S_IXGRP) ||
-                (st.st_mode & S_IXOTH)    )
+                (st.st_mode & S_IXOTH))
             cgi = 1;
         if (!cgi)
             serve_file(client, path);

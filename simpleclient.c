@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     int result;
     char ch = 'A';
 
-    sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    sockfd = socket(AF_INET, SOCK_STREAM, 0);//创建一个套接字，
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = inet_addr("127.0.0.1");
     address.sin_port = htons(9734);
